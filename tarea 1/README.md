@@ -59,7 +59,29 @@ En ingeniería mecánica, los métodos numéricos permiten estudiar sistemas fí
 
 ---
 
-## 4. Herramient
+## 4. Herramientas Utilizadas en este Curso
+
+### Entorno de Contenedores: Docker
+**Docker** es una plataforma de virtualización a nivel de sistema operativo que permite empaquetar aplicaciones y sus dependencias dentro de contenedores aislados. Docker comparte el núcleo (*kernel*) del sistema operativo huésped, lo que permite ejecutar entornos ligeros, de arranque casi instantáneo y totalmente portables (a diferencia de una máquina virtual que hipervisa un sistema operativo completo sobre un hardware virtualizado consumiendo más CPU y RAM).
+
+#### Archivos de Configuración:
+* `Dockerfile`: Define la construcción de la imagen contenedora.
+* `compose.yaml`: Permite orquestar y gestionar entornos de múltiples contenedores.
+
+#### Comandos Principales de Docker:
+* `docker compose up -d`: Inicia los servicios en segundo plano.
+* `docker exec`: Ejecuta comandos o abre consolas interactivas dentro del contenedor activo.
+* `docker stop`: Detiene la ejecución del contenedor.
+* `docker compose down`: Detiene y remueve los recursos creados.
+* `docker ps`: Lista los contenedores activos y su estado.
+* `docker logs`: Permite inspeccionar la salida estándar y errores del sistema.
+
+> **Diferencia clave:** **Apagar** un contenedor conserva los archivos, estados y modificaciones realizadas dentro del contenedor en reposo; mientras que **borrarlo** destruye la instancia y elimina cualquier dato que no haya sido persistido explícitamente en un volumen montado.
+
+### Lenguajes y Entornos del Curso:
+* **GNU Octave:** Entorno matricial de código abierto para cómputo numérico.
+* **Python:** Lenguaje interpretado con el *stack* científico instalado para cálculo e inspección de datos.
+* **C:** Compilador GNU para lenguaje C enfocado en ejecuciones de alto rendimiento.
 
 ¿Por qué 0.1 + 0.2 no da 0.3?
 
