@@ -1,0 +1,5 @@
+*.exe
+*.out
+*.o
+_pycache_/
+octave_workspace
