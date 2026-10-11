@@ -38,6 +38,24 @@ GNU Octave: Entorno matricial de codigo abierto para computo numerico
 Python: Lenguaje interpretado con el stack científico instalado para calculo e inspección de datos
 C: Compilador GNU para lenguaje C enfocado en ejecuciones de alto rendimiento
 
+¿Por qué 0.1 + 0.2 no da 0.3?
+
+Las computadoras guardan los números en binario (ceros y unos). En binario, los números **0.1** y **0.2** no se pueden escribir de forma exacta; son infinitos (como cuando intentamos escribir 1/3 = 0.3333... en decimal).
+
+Como la memoria del procesador es finita, la computadora recorta y redondea ligeramente esos números. Al sumar ambos valores recortados, el resultado exacto en memoria termina siendo:
+
+0.30000000000000004
+
+¿Coinciden C, Python y Octave?
+
+**Sí, los tres lenguajes hacen exactamente la misma matemática interna** porque dependen del mismo procesador. La única diferencia es cómo decide mostrar el resultado cada lenguaje en la pantalla:
+
+| Lenguaje | Resultado en Consola | ¿Por qué cambia la vista? |
+|---|---|---|
+| **Python** | `0.30000000000000004` | Muestra el valor con la imprecisión real por defecto. |
+| **C** | `0.30000000000000004` | Muestra la imprecisión si le pides imprimir muchos decimales (`%.17f`). |
+| **Octave** | `0.30000000000000004` | Por defecto lo esconde como `0.30000`, pero con `format long` muestra el número real. |
+
 REFERENCIAS
 Burden, R.L.,& Faires, J.D. (2011). Análisis numérico (9a ed.). Cengage Learning.
 Chapra, S.C., & Canale, R.P.(2015). Métodos Numéricos para ingenieros (7a ed.). McGraw-Hill. 
