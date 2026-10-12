@@ -61,3 +61,7 @@ Utilice gemini.ia para analizar los datos de los resultados en python, para las 
 
 ## Referencias
 
+Burden, R.L.,& Faires, J.D. (2011). Análisis numérico (9a ed.). Cengage Learning.
+
+Chapra, S.C., & Canale, R.P.(2015). Métodos Numéricos para ingenieros (7a ed.). McGraw-Hill.
+
