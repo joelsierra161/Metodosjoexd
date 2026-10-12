@@ -36,20 +36,28 @@ La lámina también muestra un séptimo término como referencia. Sin embargo, e
 
 ## 3. Más cifras significativas
 
-| Cifras | εs (%) | Términos | Aproximación | Error verdadero (%) |
-|---|---|---|---|---|
-| 3 | | | | |
-| 6 | | | | |
-| 17 | | | | |
+| Cifras | εs (%) | Términos | Aproximación | Error verdadero (%) 
+| -----: | -----: | -------: | ----------------: | ------------------: |
+|      3 |   0.05 |        6 | 1.648697916666667 |          0.00141649 |
+|      6 |   5e-5 |        9 | 1.648721265035962 |          3.43549e-7 |
+|     17 |  5e-16 |       16 | 1.648721270700128 |         2.69354e-14 |
+
 
 1. ¿Cuántos términos hacen falta en cada caso?
-2. En cada fila de la tabla, ¿εa es mayor o menor que εt? ¿Por qué conviene detenerse con εa?
-3. Con 17 cifras el programa termina. ¿Cuántas cifras del resultado son correctas en realidad?
+
+Con 3 cifras se necesitan 6 términos, con 6 cifras se necesitan 9 términos y con 17 cifras se necesitan 16 términos.
+
+3. En cada fila de la tabla, ¿εa es mayor o menor que εt? ¿Por qué conviene detenerse con εa?
+
+El error aproximado es mayor que el error verdadero en los tres casos. Conviene utilizarlo porque no siempre conocemos el valor verdadero de la función y permite establecer cuándo detener el cálculo.
+
+4. Con 17 cifras el programa termina. ¿Cuántas cifras del resultado son correctas en realidad?
    Relaciónenlo con 0.1 + 0.2 de la Tarea 1.
 
+El resultado coincide con el valor de referencia mostrado hasta las cifras impresas. Para determinar cuántas cifras significativas son correctas, se debe comparar la aproximación sin redondear con el valor verdadero y aplicar el criterio de cifras significativas.
 ## Uso de inteligencia artificial
 
-Ninguno / Cuál y para qué.
+Utilice gemini.ia para analizar los datos de los resultados en python, para las 3,6 y 17 cifras y poder completar la tabla del punto 3
 
 ## Referencias
 
