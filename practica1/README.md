@@ -57,7 +57,7 @@ El error aproximado es mayor que el error verdadero en los tres casos. Conviene 
 El resultado coincide con el valor de referencia mostrado hasta las cifras impresas. Para determinar cuántas cifras significativas son correctas, se debe comparar la aproximación sin redondear con el valor verdadero y aplicar el criterio de cifras significativas.
 ## Uso de inteligencia artificial
 
-Utilice gemini.ia para analizar los datos de los resultados en python, para las 3,6 y 17 cifras y poder completar la tabla del punto 3
+Utilicé gemini.ia para analizar los datos de los resultados en python, para las 3,6 y 17 cifras y poder completar la tabla del punto 3
 
 ## Referencias
 
